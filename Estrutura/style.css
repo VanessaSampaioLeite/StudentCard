@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: gray;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+    width: 40%;
+    height: 50vh;
+    position: relative;
+    top: 15vh;
+    left: 30vw;
+    border-radius: 10px;
+}
+
+main > h2 {
+    padding: 10px;
+}
+
+main > p > #valor {
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+main > p > #gerar {
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
