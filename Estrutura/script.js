@@ -1,6 +1,5 @@
-let valor = document.getElementById('valor')
-let local = document.getElementById('caixa')
-
 function gerar() {
-    document.h1
+    let parc = document.getElementById('parc')
+    let parcela = document.getElementById('parcela')
+    parc.innerHTML = parcela.value
 }

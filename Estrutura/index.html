@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boleto</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        main > #caixa > p {
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
     <main>
         <h2>
-            Parcelas
+            Boletos
         </h2>
-        <p>Valor: <input type="number" name="txtvalor" id="valor" required>
-        <input type="button" value="GERAR" id="gerar" onclick="gerar()"></p>
-        <div id="caixa"></div>
+        <p>
+            Codigo de Barra: <input type="number" name="txtvalor" id="valor" required min="50">    
+        </p>
+        <p>
+            Parcelas: <input type="number" name="txtparc" id="parcela" max="5" min="1" required value="1">
+        </p>
+        <p>
+            <input type="button" value="GERAR" id="gerar" onclick="gerar()">
+        </p>
+        <div id="caixa">
+            <p id="b1">
+                1 de <span id="parc">x</span> <span>situação</span> Valor: R$<span id="valorp"></span>
+            </p>
+            <p id="b2">
+                2 de <span id="parc">x</span> <span>situação</span> Valor: R$<span id="valorp"></span>
+            </p>
+            <p id="b3">
+                3 de <span id="parc">x</span> <span>situação</span> Valor: R$<span id="valorp"></span>
+            </p>
+            <p id="b4">
+                4 de <span id="parc">x</span> <span>situação</span> Valor: R$<span id="valorp"></span>
+            </p>
+            <p id="b5">
+                5 de <span id="parc">x</span> <span>situação</span> Valor: R$<span id="valorp"></span>
+            </p>
+        </div>
     </main>
 </body>
 <script src="script.js"></script>
+
 </html>
