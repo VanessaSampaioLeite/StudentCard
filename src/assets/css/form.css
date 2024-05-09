@@ -1,0 +1,26 @@
+.form--section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.icon-1 {
+    background-color: var(--color-3);
+    background-image: url(../img/icon-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    padding: 3em;
+}
+
+.form {
+    background-color: var(--color-3);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    row-gap: 1em;
+    width: 100%;
+}

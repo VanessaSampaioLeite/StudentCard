@@ -1,0 +1,41 @@
+:root {
+    --color-1: #222831;
+    --color-2: #393E46;
+    --color-3: #EEEEEE;
+}
+
+.index-div {
+    align-items: center;
+    background-color: var(--color-2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.index-div > main {
+    background-color: var(--color-1);
+    border-radius: 0.5em;
+    opacity: 95%;
+    padding: 1em;
+    width: 50%;
+}
+
+.index-div > footer {
+    align-items: center;
+    background-color: var(--color-1);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    opacity: 95%;
+    padding: 1em;
+    width: 90%;
+}
+
+.copy {
+    color: white;
+    font-family: calibri;
+}
