@@ -7,7 +7,7 @@
     <title>Boleto</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        main > #caixa > p {
+        main>#caixa>p {
             display: none;
         }
     </style>
@@ -19,7 +19,7 @@
             Pagamento do Boleto
         </h2>
         <p>
-            Codigo de Barra: <input type="number" name="txtvalor" id="valor" required>    
+            Codigo de Barra: <input type="number" name="txtvalor" id="valor" required>
         </p>
         <p>
             Parcelamento: <input type="number" name="txtparc" id="parcela" max="5" min="1" required value="1">
@@ -28,6 +28,58 @@
             <input type="button" value="PAGAR BOLETO" id="gerar" onclick="pagar()">
         </p>
     </main>
+    <footer class="footer">
+        <div class="rodape">
+            <ul class="lista3" id="nubank" type="square">
+                <h3>StudentCard</h3>
+                <a href="#">
+                    <li>Sobre nós</li>
+                </a>
+                <a href="#">
+                    <li>Carreiras</li>
+                </a>
+                <a href="#">
+                    <li>Empresa</li>
+                </a>
+            </ul>
+            <ul class="lista3" id="produtos">
+                <h3>Produtos</h3>
+                <a href="">
+                    <li>Conta Digital</li>
+                </a>
+                <a href="">
+                    <li>Cartão Ultravioleta</li>
+                </a>
+                <a href="">
+                    <li>Empréstimo</li>
+                </a>
+            </ul>
+            <ul class="lista3" id="explore" type="none">
+                <h3>Explore</h3>
+                <a href="">
+                    <li>Comunidade</li>
+                </a>
+                <a href="">
+                    <li>Blog</li>
+                </a>
+                <a href="">
+                    <li>Newsletter</li>
+                </a>
+            </ul>
+            <ul class="lista3" id="vejatbm" type="">
+                <h3>Veja também</h3>
+                <a href="">
+                    <li>Tudo sobre o Pix</li>
+                </a>
+                <a href="">
+                    <li>Fornecedores</li>
+                </a>
+                <a href="">
+                    <li>Banco Central do Brasil</li>
+                </a>
+            </ul>
+        </div>
+    </footer>
 </body>
 <script src="script.js"></script>
 

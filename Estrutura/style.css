@@ -16,7 +16,7 @@ main {
     height: 50vh;
     position: relative;
     top: 15vh;
-    left: 30vw;
+    margin: auto;
     border-radius: 10px;
 }
 
@@ -45,4 +45,49 @@ main > p > #gerar {
 
 main > p > #parcela {
     margin-top: 5px;
+}
+
+main > p > #gerar {
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+main > p > #gerar:hover {
+    background-color: black;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white; 
+    height: 250px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+.rodape{
+    display: flex;
+    margin-top: 5px;
+    width: 100%;
+}
+.rodape > ul > h3{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.lista3{
+    margin: 5px 30px 5px 30px;
+    width: 100%;
+}
+footer > div > ul > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    width: 100%;
+    
+}
+
+ul > a:hover{
+    color: darkorange;
+    transition: 0.35s;
 }
