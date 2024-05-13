@@ -14,16 +14,30 @@
 </head>
 
 <body>
+    <header>
+        <h1>
+            STUDENTCARD
+        </h1>
+    </header>
     <main>
         <h2>
             Pagamento do Boleto
         </h2>
-        <p>
-            Codigo de Barras: <input type="number" name="txtvalor" id="valor" required>    
-        </p>
-        <p>
-            Parcelamento: <input type="number" name="txtparc" id="parcela" max="5" min="1" required value="1">
-        </p>
+        <section>
+            <p id="codigo">
+                Codigo de Barras: <input type="number" name="txtvalor" id="valor" required>
+            </p>
+            <p id="parcelamento">
+                Parcelamento:
+                <select name="Parcelamento" id="parcela">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                </select>
+            </p>
+        </section>
         <p>
             <input type="button" value="PAGAR BOLETO" id="gerar" onclick="pagar()">
         </p>
