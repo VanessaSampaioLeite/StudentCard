@@ -2,32 +2,37 @@
 // Verifica se os inputs foram enviados via POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtém os valores dos inputs
-    $input1 = $_POST["valor"];
-    $input2 = $_POST["parcelas"];
+    $valor = $_POST["valor"];
+    $parcelas = $_POST["parcelas"];
     
-    // Calcula a soma
-    $soma = $input1 + $input2;
+
     
-    // Calcula a subtração
-    $subtracao = $input1 - $input2;
+    //programa de milhas
+
+    $milhas = 35/500 * $valor;
     
-    // Calcula a multiplicação
-    $multiplicacao = $input1 * $input2;
+    //programa de pontos
+
+    $pontos = (9/100) * $valor;
+
+
+    //programa de cashback
+
+    $cashback = 0.05 * $valor;
+
+
+    //descontos em compras
+
+
+    $descontos = $valor * 0.001; 
+
     
-    // Verifica se o segundo input é diferente de zero antes de calcular a divisão
-    if ($input2 != 0) {
-        // Calcula a divisão
-        $divisao = $input1 / $input2;
-    } else {
-        // Define a divisão como "Indefinido" se o segundo input for zero
-        $divisao = "Indefinido";
-    }
     
     // Exibe os resultados
-    echo "<h2>Resultados:</h2>";
-    echo "Soma: " . $soma . "<br>";
-    echo "Subtração: " . $subtracao . "<br>";
-    echo "Multiplicação: " . $multiplicacao . "<br>";
-    echo "Divisão: " . $divisao . "<br>";
+    echo "<h2>Veja suas vantagens:</h2>";
+    echo "Desconto de: " . $descontos . " centavo(s). <br>";
+    echo "Cashback de: " . $cashback . " centavo(s). <br>";
+    echo "Milhas aéreas ganhas: " . $milhas . " milha(s). <br>";
+    echo  $pontos . " pontos ganhos no programa 'My studentcard' com essa compra. <br>";
 }
 ?>
