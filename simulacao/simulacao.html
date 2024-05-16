@@ -1,5 +1,9 @@
-<html>
-    
+<!--Versão 0.2
+        -Alteração no código para funcionamento correto do arquivo js.js
+        -Correção de detalhes textuais-->
+
+
+<html>  
     <head>
         <meta charset="UTF-8">
         <title>Página Simulação</title> 
@@ -50,7 +54,7 @@
                 <input type="number" id="valor" name="valor" required>
 
                 <label for="parcelas">Quantidade de parcelas:</label>
-                <select name="parcelas">
+                <select name="parcelas" id="parcelas">
                     <option value="">Selecione o número de parcelas</option>
                     <option value="1">1x</option>
                     <option value="2">2x</option>
@@ -59,19 +63,18 @@
                     <option value="5">5x</option>
                     <!-- Retirada do número de parcelas excedentes (6 a 12)-->
                 </select>
-
-                <!--Inicio de uso do JavaScript-->
-                <script src="script.js"></script>
-
-                <div></div>
-
-
                 <input type="submit" value="Enviar" required>
 
             </form>
         </section>
 
     </section>
+
+    <!--Inicio de uso do JavaScript-->
+    <script src="js.js"></script>
+
+    <ul class="item-list" id="itemList"></ul>
+
 
 
 </body>
