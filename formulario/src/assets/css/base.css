@@ -4,7 +4,7 @@
     --color-3: #EEEEEE;
 }
 
-.index-div {
+.form-div {
     align-items: center;
     background-color: var(--color-2);
     background-repeat: no-repeat;
@@ -16,15 +16,15 @@
     padding: 1em;
 }
 
-.index-div > main {
-    background-color: var(--color-1);
+.form-div > main {
+    background-image: linear-gradient(#222231, #222531, #222831);
     border-radius: 0.5em;
     opacity: 95%;
     padding: 1em;
     width: 50%;
 }
 
-.index-div > footer {
+.form-div > footer {
     align-items: center;
     background-color: var(--color-1);
     border-radius: 0.5em;
