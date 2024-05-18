@@ -11,35 +11,27 @@
         <h1>StudentCard</h1>
     </header>
 
-    <section id="beneficios">
-        <div class="beneficios-container">
-            <div class="beneficio" id="beneficio1">
-                <img src="" alt="Benefício 1">
-                <p> Sem Anuidade</p>
-            </div>
-            <div class="beneficio" id="beneficio2">
-                <img src="" alt="Benefício 2">
-                <p>Programa de recompensas por gastos em educação</p>
-            </div>
-            <div class="beneficio" id="beneficio3">
-                <img src="" alt="Benefício 3">
-                <p>Sem comprovação de renda</p>
-            </div>
-        </div>
-    </section>
-
     <section id="contato">
         <div class="formulario">
             <h2>Entre em Contato</h2>
-            <form action="#" method="POST">
+            <form action="#" method="POST" id="contact-form">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="" disabled selected>Selecione um assunto</option>
+                    <option value="Dúvida">Dúvida</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Sugestão">Sugestão</option>
+                    <option value="Outro">Outro</option>
+                </select>
 
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" required></textarea>
@@ -52,5 +44,12 @@
     <footer>
         <p>&copy; 2024 StudentCard. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Pop-up de mensagem -->
+    <div id="popup" class="popup">
+        <p id="popup-message">Mensagem enviada com sucesso!</p>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
