@@ -1,7 +1,7 @@
 //Versão que funcionou. Nem tudo está claro, mas aos poucos to entendendo. 
 //Todos os 'console.log' foram retirados.
 //Simulação crua funcionando como deveria. Crua.
-//
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
