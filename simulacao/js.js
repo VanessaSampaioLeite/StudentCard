@@ -1,7 +1,7 @@
 //Versão que funcionou. Nem tudo está claro, mas aos poucos to entendendo. 
 //Todos os 'console.log' foram retirados.
 //Simulação crua funcionando como deveria. Crua.
-
+//
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
         li.innerHTML = `
         Valor da compra nesta simulação: ${value1}<br>
         Quantidade de parcelas nesta simulação: ${value2}<br>
-
+        Seu desconto nessa compra é de ${(value1*0.001)} centavos<br>
+        Você está acumulando ${(14/100)} pontos no seu plano MyStudentcadr<br>
         Seu cashback nessa compra é de ${(value1 * 0.35).toFixed(2)} centavos<br>
         
-        Parcelas: ${value2}<br>
-        Desconto: ${(value1 * 0.001).toFixed(2)} centavos
+
     `;
 
         itemList.appendChild(li);            
