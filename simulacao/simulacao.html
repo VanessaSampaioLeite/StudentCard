@@ -1,43 +1,101 @@
-<!--Versão 0.2
-        -Alteração no código para funcionamento correto do arquivo js.js
-        -Correção de detalhes textuais-->
-
+<!--Versão 0.
+    -Pequenas correções textuais
+    -Início do uso de CSS
+    -Retirada da lista para uso de parágrafos-->
+    
 
 <html>  
     <head>
         <meta charset="UTF-8">
-        <title>Página Simulação</title> 
+        <title>Página de Simulação - StudentCard</title> 
+
+        <style>
+            .beneficioum    {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                display: flex;
+                text-align: center;
+
+            }
+            
+            .beneficiodois  {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                display: flex;       
+                text-align: center;
+
+
+            }
+            .beneficiotres  {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                display: flex;               
+                text-align: center;
+
+            }
+
+            .beneficioquatro  {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                display: flex;
+                text-align: center;
+
+            }
+
+            .beneficiocinco  {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                display: flex;
+                text-align: center;
+
+            }
+
+            .beneficioseis  {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                display: flex;
+                text-align: center;
+
+            }
+            
+            .duascolunas   {
+                display: flex;
+                width: 50%;
+            }
+
+        </style>
     </head>
 <body>
     <section class="title">
         <h1>Conheça seus benefícios e simule seus ganhos</h1>
     </section>
+    
+    <section class="beneficios"> 
+        <section class="duascolunas">
+            <section class="colunaum">
+                <section class="beneficioum">
+                    <p><b>Descontos em compras<br></b> - Com o nosso cartão de crédito, você terá acesso a uma variedade de descontos exclusivos em parceiros selecionados. Desde roupas e eletrônicos até restaurantes e viagens, você poderá economizar em suas compras diárias e em momentos especiais.</p>            </section>
+                </section>
 
-    <section class="beneficios">
-        <ul> 
-            <section class="beneficioum">
-                <li><b>Descontos em compras</b> - Com o nosso cartão de crédito, você terá acesso a uma variedade de descontos exclusivos em parceiros selecionados. Desde roupas e eletrônicos até restaurantes e viagens, você poderá economizar em suas compras diárias e em momentos especiais.</li>
-            </section>
+                <section class="beneficiodois">
+                    <p><b>Cashback<br></b> - Com o nosso programa de cashback, você recebe de volta uma porcentagem do valor de suas compras. Quanto mais você usa o cartão, mais dinheiro você recebe de volta. É como ganhar um pequeno reembolso em cada compra, o que pode se acumular ao longo do tempo para uma economia significativa.</p>
+                </section>
 
-            <section class="beneficiodois">
-                <li><b>Cashback</b> - Com o nosso programa de cashback, você recebe de volta uma porcentagem do valor de suas compras. Quanto mais você usa o cartão, mais dinheiro você recebe de volta. É como ganhar um pequeno reembolso em cada compra, o que pode se acumular ao longo do tempo para uma economia significativa.</li>
-            </section>
+                <section class="beneficiotres">
+                    <p><b>Milhas aéreas<br></b> - Ao utilizar nosso cartão de crédito, você acumula milhas aéreas que podem ser trocadas por passagens aéreas, upgrades de classe ou até mesmo hospedagem em hotéis. Com as milhas que você acumula em suas compras diárias, você pode transformar suas próximas férias em uma experiência ainda mais acessível ou luxuosa.</p>
+                </section>
+            </section>    
+        
 
-            <section class="beneficiotres">
-                <li><b>Milhas aéreas</b> - Ao utilizar nosso cartão de crédito, você acumula milhas aéreas que podem ser trocadas por passagens aéreas, upgrades de classe ou até mesmo hospedagem em hotéis. Com as milhas que você acumula em suas compras diárias, você pode transformar suas próximas férias em uma experiência ainda mais acessível ou luxuosa.</li>
-            </section>
+            <section class="colunadois">
+                <section class="beneficioquatro">
+                    <p><b>Seguro de viagem<br></b> - Com nosso cartão, você terá acesso a um seguro de viagem abrangente, que inclui cobertura para despesas médicas, cancelamento de viagem, perda de bagagem e muito mais. Assim, você pode viajar com tranquilidade, sabendo que está protegido em caso de imprevistos.</p>
+                </section>
 
-            <section class="beneficioquatro">
-                <li><b>Seguro de viagem</b> - Com nosso cartão, você terá acesso a um seguro de viagem abrangente, que inclui cobertura para despesas médicas, cancelamento de viagem, perda de bagagem e muito mais. Assim, você pode viajar com tranquilidade, sabendo que está protegido em caso de imprevistos.</li>
-            </section>
+                <section class="beneficiocinco">
+                    <p><b>Proteção de compra<br></b> - Ao fazer compras com nosso cartão, você recebe automaticamente uma proteção extra para seus produtos. Isso significa que, se algo que você comprou for danificado ou roubado dentro de um determinado período de tempo, você pode receber um reembolso total ou parcial do valor da compra.</p>
+                </section>
 
-            <section class="beneficiocinco">
-                <li><b>Proteção de compra</b> - Ao fazer compras com nosso cartão, você recebe automaticamente uma proteção extra para seus produtos. Isso significa que, se algo que você comprou for danificado ou roubado dentro de um determinado período de tempo, você pode receber um reembolso total ou parcial do valor da compra.</li>
-            </section>
+                <section class="beneficioseis">
+                    <p><b>Programa de pontos<br></b> - Com nosso programa de pontos, cada compra que você faz com o cartão acumula pontos que podem ser trocados por uma variedade de recompensas, como produtos, gift cards, experiências exclusivas e muito mais. Quanto mais você usa o cartão, mais pontos você acumula e mais recompensas você pode desfrutar.</p>
+                </section>
 
-            <section class="benefioseis">
-                <li><b>Programa de pontos</b> - Com nosso programa de pontos, cada compra que você faz com o cartão acumula pontos que podem ser trocados por uma variedade de recompensas, como produtos, gift cards, experiências exclusivas e muito mais. Quanto mais você usa o cartão, mais pontos você acumula e mais recompensas você pode desfrutar.</li>
             </section>
+        </section>    
     </section>
 
     <section class="input">
@@ -45,10 +103,7 @@
             <h1>Simulação</h1>
         </section>
 
-        <section clas="formulario">
-            <!--Problema: Ao apertar o botão 'enviar', o method 'post' fazia a página atualizar. Deixarei o código referente a essa correção apenas comentado apenas para futuras consultas, será retirado antes de futuro lançamento junto desse comentário. Além disso, nessa versão deixo de usar o .php e passo a utilizar javascript para que a 'simulação' de compra apareça na mesma página e instataneamente assim que o user preencher o valor e a quantidade de parcelas. -->  
-            <!-- form action="processamento.php" method="post"-->
-                
+        <section clas="formulario">                
             
                 <label for="valor">Valor a ser parcelado:</label>
                 <input type="number" id="valor" name="valor" required>
@@ -61,16 +116,11 @@
                     <option value="3">3x</option>
                     <option value="4">4x</option>
                     <option value="5">5x</option>
-                    <!-- Retirada do número de parcelas excedentes (6 a 12)-->
                 </select>
-                <input type="submit" value="Enviar" required>
 
-            </form>
         </section>
 
     </section>
-
-    <!--Inicio de uso do JavaScript-->
     <script src="js.js"></script>
 
     <ul class="item-list" id="itemList"></ul>

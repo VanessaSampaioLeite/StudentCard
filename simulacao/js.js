@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const li = document.createElement('li');    
         li.innerHTML = `
-        Valor da compra nesta simulação: ${value1}<br>
-        Quantidade de parcelas nesta simulação: ${value2}<br>
+        Valor da compra nesta simulação: ${value1} reais<br>
+        Quantidade de parcelas nesta simulação: ${value2} parcelas<br>
         Seu desconto nessa compra é de ${(value1*0.001)} centavos<br>
         Você está acumulando ${(14/100)} pontos no seu plano MyStudentcadr<br>
         Seu cashback nessa compra é de ${(value1 * 0.35).toFixed(2)} centavos<br>
