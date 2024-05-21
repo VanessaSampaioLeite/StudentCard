@@ -10,9 +10,7 @@
     background-image: url(../img/icon-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 100%;
-    padding: 3em;
 }
 
 .form {
@@ -54,4 +52,39 @@
 
 .form--link > a:active {
     color: var(--color-2);
+}
+
+@media (max-width: 480px) {
+    .icon-1 {
+        background-size: 4em;
+        padding: 2em;
+    }
+}
+
+@media (min-width: 481px ) and (max-width: 768px) {
+    .icon-1 {
+        background-size: 4.5em;
+        padding: 2.3em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .icon-1 {
+        background-size: 5em;
+        padding: 2.6em;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .icon-1 {
+        background-size: 5.5em;
+        padding: 2.9em;
+    }
+}
+
+@media (min-width: 1201px) {
+    .icon-1 {
+        background-size: cover;
+        padding: 3em;
+    }
 }
