@@ -1,43 +1,73 @@
-<!--Versão 0.2
-        -Alteração no código para funcionamento correto do arquivo js.js
-        -Correção de detalhes textuais-->
-
-
+<!DOCTYPE html>
 <html>  
-    <head>
-        <meta charset="UTF-8">
-        <title>Página Simulação</title> 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Simulação - StudentCard</title> 
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .beneficios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+        }
+
+        .beneficio {
+            display: flex;
+            flex: 0 0 45%;
+            margin: 2.5%;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input, .title, .cabecalhodois {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label, input, select {
+            margin: 10px 0;
+        }
+    </style>
+</head>
 <body>
     <section class="title">
         <h1>Conheça seus benefícios e simule seus ganhos</h1>
     </section>
-
+    
     <section class="beneficios">
-        <ul> 
-            <section class="beneficioum">
-                <li><b>Descontos em compras</b> - Com o nosso cartão de crédito, você terá acesso a uma variedade de descontos exclusivos em parceiros selecionados. Desde roupas e eletrônicos até restaurantes e viagens, você poderá economizar em suas compras diárias e em momentos especiais.</li>
-            </section>
-
-            <section class="beneficiodois">
-                <li><b>Cashback</b> - Com o nosso programa de cashback, você recebe de volta uma porcentagem do valor de suas compras. Quanto mais você usa o cartão, mais dinheiro você recebe de volta. É como ganhar um pequeno reembolso em cada compra, o que pode se acumular ao longo do tempo para uma economia significativa.</li>
-            </section>
-
-            <section class="beneficiotres">
-                <li><b>Milhas aéreas</b> - Ao utilizar nosso cartão de crédito, você acumula milhas aéreas que podem ser trocadas por passagens aéreas, upgrades de classe ou até mesmo hospedagem em hotéis. Com as milhas que você acumula em suas compras diárias, você pode transformar suas próximas férias em uma experiência ainda mais acessível ou luxuosa.</li>
-            </section>
-
-            <section class="beneficioquatro">
-                <li><b>Seguro de viagem</b> - Com nosso cartão, você terá acesso a um seguro de viagem abrangente, que inclui cobertura para despesas médicas, cancelamento de viagem, perda de bagagem e muito mais. Assim, você pode viajar com tranquilidade, sabendo que está protegido em caso de imprevistos.</li>
-            </section>
-
-            <section class="beneficiocinco">
-                <li><b>Proteção de compra</b> - Ao fazer compras com nosso cartão, você recebe automaticamente uma proteção extra para seus produtos. Isso significa que, se algo que você comprou for danificado ou roubado dentro de um determinado período de tempo, você pode receber um reembolso total ou parcial do valor da compra.</li>
-            </section>
-
-            <section class="benefioseis">
-                <li><b>Programa de pontos</b> - Com nosso programa de pontos, cada compra que você faz com o cartão acumula pontos que podem ser trocados por uma variedade de recompensas, como produtos, gift cards, experiências exclusivas e muito mais. Quanto mais você usa o cartão, mais pontos você acumula e mais recompensas você pode desfrutar.</li>
-            </section>
+        <div class="beneficio">
+            <p><b>Descontos em compras<br></b> - Com o nosso cartão de crédito, você terá acesso a uma variedade de descontos exclusivos em parceiros selecionados. Desde roupas e eletrônicos até restaurantes e viagens, você poderá economizar em suas compras diárias e em momentos especiais.</p>
+        </div>
+        <div class="beneficio">
+            <p><b>Cashback<br></b> - Com o nosso programa de cashback, você recebe de volta uma porcentagem do valor de suas compras. Quanto mais você usa o cartão, mais dinheiro você recebe de volta. É como ganhar um pequeno reembolso em cada compra, o que pode se acumular ao longo do tempo para uma economia significativa.</p>
+        </div>
+        <div class="beneficio">
+            <p><b>Milhas aéreas<br></b> - Ao utilizar nosso cartão de crédito, você acumula milhas aéreas que podem ser trocadas por passagens aéreas, upgrades de classe ou até mesmo hospedagem em hotéis. Com as milhas que você acumula em suas compras diárias, você pode transformar suas próximas férias em uma experiência ainda mais acessível ou luxuosa.</p>
+        </div>
+        <div class="beneficio">
+            <p><b>Seguro de viagem<br></b> - Com nosso cartão, você terá acesso a um seguro de viagem abrangente, que inclui cobertura para despesas médicas, cancelamento de viagem, perda de bagagem e muito mais. Assim, você pode viajar com tranquilidade, sabendo que está protegido em caso de imprevistos.</p>
+        </div>
+        <div class="beneficio">
+            <p><b>Proteção de compra<br></b> - Ao fazer compras com nosso cartão, você recebe automaticamente uma proteção extra para seus produtos. Isso significa que, se algo que você comprou for danificado ou roubado dentro de um determinado período de tempo, você pode receber um reembolso total ou parcial do valor da compra.</p>
+        </div>
+        <div class="beneficio">
+            <p><b>Programa de pontos<br></b> - Com nosso programa de pontos, cada compra que você faz com o cartão acumula pontos que podem ser trocados por uma variedade de recompensas, como produtos, gift cards, experiências exclusivas e muito mais. Quanto mais você usa o cartão, mais pontos você acumula e mais recompensas você pode desfrutar.</p>
+        </div>
     </section>
 
     <section class="input">
@@ -45,37 +75,23 @@
             <h1>Simulação</h1>
         </section>
 
-        <section clas="formulario">
-            <!--Problema: Ao apertar o botão 'enviar', o method 'post' fazia a página atualizar. Deixarei o código referente a essa correção apenas comentado apenas para futuras consultas, será retirado antes de futuro lançamento junto desse comentário. Além disso, nessa versão deixo de usar o .php e passo a utilizar javascript para que a 'simulação' de compra apareça na mesma página e instataneamente assim que o user preencher o valor e a quantidade de parcelas. -->  
-            <!-- form action="processamento.php" method="post"-->
-                
-            
-                <label for="valor">Valor a ser parcelado:</label>
-                <input type="number" id="valor" name="valor" required>
+        <section class="formulario">                
+            <label for="valor">Valor a ser parcelado:</label>
+            <input type="number" id="valor" name="valor" required>
 
-                <label for="parcelas">Quantidade de parcelas:</label>
-                <select name="parcelas" id="parcelas">
-                    <option value="">Selecione o número de parcelas</option>
-                    <option value="1">1x</option>
-                    <option value="2">2x</option>
-                    <option value="3">3x</option>
-                    <option value="4">4x</option>
-                    <option value="5">5x</option>
-                    <!-- Retirada do número de parcelas excedentes (6 a 12)-->
-                </select>
-                <input type="submit" value="Enviar" required>
-
-            </form>
+            <label for="parcelas">Quantidade de parcelas:</label>
+            <select name="parcelas" id="parcelas">
+                <option value="">Selecione o número de parcelas</option>
+                <option value="1">1x</option>
+                <option value="2">2x</option>
+                <option value="3">3x</option>
+                <option value="4">4x</option>
+                <option value="5">5x</option>
+            </select>
         </section>
-
     </section>
 
-    <!--Inicio de uso do JavaScript-->
     <script src="js.js"></script>
-
     <ul class="item-list" id="itemList"></ul>
-
-
-
 </body>
 </html>
