@@ -121,7 +121,7 @@ main > #fase1 > #peça > p > button:hover {
 }
 
 main section {
-    background-image: url(img/estudantes-universitarios-de-diferentes-etnias-lotando_23-2149891296.avif);
+    background-image: url(img/estudantes-universitarios.avif);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -150,7 +150,7 @@ main #sobre p {
 }
 
 main #como_ajudar {
-    background-image: url(img/emocoes-puras-e-felicidade-sincera-ainda-bem-que-a-adolescente-sorri-ri-de-algo-engracado-mantem-os-olhos-fechados-tem-um-sorriso-cheio-de-dentes-i.jpg);
+    background-image: url(img/emocoes-puras-e-felicidade.jpg);
     margin-top: 0;
 }
 
