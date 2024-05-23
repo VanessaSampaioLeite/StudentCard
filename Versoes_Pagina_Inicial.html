@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- TITLE -->
+        <title>StudentCard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: "Raleway", sans-serif;
+                }
+                header {
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    background-color: black;
+                    color: white;
+                    text-align: center;
+                    font-size: 30px;
+                }
+                /* Classe */
+
+                .estilo1 {
+                    width: 100%;
+                    font-size: 15px;
+                    margin: auto;
+                    display: flex;
+                    border: 0px solid black;
+                    text-align: center ;
+                    justify-content: center;
+                    background: rgb(19,15,15);
+background: linear-gradient(180deg, rgba(19,15,15,1) 16%, rgba(82,78,78,1) 42%, rgba(23,19,19,1) 72%);
+                    color: #fff;
+                }
+
+                .menu {
+                    margin: auto;
+                    padding: 20px;
+                    background: rgb(19,15,15);
+background: linear-gradient(180deg, rgba(19,15,15,1) 3%, rgba(82,78,78,1) 42%, rgba(23,19,19,1) 72%);
+                    display: flex;
+                    list-style: none;
+                    justify-content: space-evenly;
+                }
+
+                .menu a {
+                    padding: 15px;
+                    color: white;
+                    text-decoration: none;
+                    transition: 0.3s all;
+                }
+
+                .menu a:active {
+                    color: black;
+                    transition: 0.3s all;
+                }
+
+                .menu a:visited {
+                    color: white;
+                    transition: 0.3s all;
+                }
+
+                .menu a:hover {
+                    padding: 15px;
+                    color: black;
+                    transition: 0.1s all;
+                    background-color: #fff;
+                    border-radius: 11px;
+                }
+
+                .img-card {
+                    margin: auto;
+                    width: 100%;
+                    height: 500px;
+                    background-image: url('./card.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    align-items: center;
+                    justify-content: center;            
+                }
+
+                .img-card > h2 {
+                    padding-top: 150px;
+                }
+
+        </style>
+    </head> <!-- FIM DO HEAD-->
+    <body> <!-- INÍCIO DO BODY -->
+        <section> <!-- Header = Topo do site-->
+            <header id="header">
+                <br>
+                <big><big>Simplifique a sua vida universitária</big></big>
+                <br><br/> UTILIZE O STUDENTCARD COMO SEU AUXILIAR<br/>
+            <br>
+            </header> <!-- Fim do topo-->
+        </section>
+        <article>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#StudentCard"><big>Sobre o StudentCard</big></a></li>
+                    <li><a href="#"><big>Anuidade Zero</big></a></li>
+                    <li><a href="#"><big>Benefícios</big></a></li>
+                    <li><a href="#"><big>Simulação</big></a></li>
+                    <li><a href="#"><big>Pagamento</big></a></li>
+                    <li><a href="#"><big>Fale conosco</big></a></li>
+                </ul>
+            </nav>
+            <section class="estilo1" id="StudentCard">
+                <div>
+                    <div class="img-card">
+                        <br><br/><br><br/><br><br/><br><br/>
+                        <big><big><big>StudentCard</big></big></big>
+                    </div>
+                    <!-- <p>
+                        <img align="left" hspace="50" class="imagem" src="./card.png">
+                    </p> -->
+                    <p>
+                        <big><b><ins>Sobre o StudentCard</ins></b></big>
+                        <br><br>O StudentCard tem como objetivo principal te ajudar no pagamento da sua mensalidade universitária<br/><br/>
+                    </p>
+                    <p>
+                        <br><big><b>Como o StudentCard te ajudará?</b></big><br/>
+                        <br>PARCELANDO O BOLETO DA MENSALIDADE DA SUA FACULDADE SEM JUROS!!!<br/>
+                    </p>
+                </div>
+            </section>
+        </article>
+    </body>
+</html>
