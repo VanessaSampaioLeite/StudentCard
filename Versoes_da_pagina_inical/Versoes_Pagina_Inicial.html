@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- TITLE -->
+        <title>StudentCard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+                body {
+                margin: 0;
+                    font-family: "Raleway", sans-serif;
+                }
+                header {
+                    padding-top: 60px;
+                    padding-bottom: 60px;
+                    background: rgb(5,0,0);
+                    background: linear-gradient(84deg, rgba(5,0,0,1) 2%, rgba(13,12,12,1) 5%, rgba(28,25,25,1) 32%, rgba(6,3,3,1) 100%);                   
+                    color: white;
+                    text-align: center;
+                    font-size: 30px;
+                }
+
+                /* Classe */
+
+                .estilo1 {
+                    font-size: 15px;
+                    padding: 15px;
+                    margin: auto;
+                    display: flex;
+                    border: 0px solid black;
+                    text-align: center ;
+                    background: rgb(92,87,87);
+background: linear-gradient(0deg, rgba(92,87,87,1) 44%, rgba(96,89,89,1) 91%);; 
+                }
+                .menu {
+                    display: flex;
+                    list-style: none;
+                    justify-content: space-evenly;
+                    padding: 10px;
+                    margin: 0;
+                    background: rgb(124,118,118);
+                    background: linear-gradient(0deg, rgba(124,118,118,1) 2%, rgba(115,107,107,1) 5%, rgba(102,97,97,1) 18%, rgba(6,3,3,1) 100%);  
+                }
+                .menu a {
+                    color: white;
+                    transition: 0.3s all;
+                    text-decoration: none;
+                }
+
+                .menu a:active {
+                    color: black;
+                    transition: 0.3s all;
+                }
+
+                .menu a:visited {
+                    color: black;
+                    transition: 0.3s all;
+                }
+
+                .menu a:hover {
+                    color: white;
+                    transition: 0.3s all;
+                }
+        </style>
+    </head> <!-- FIM DO HEAD-->
+    <body> <!-- INÍCIO DO BODY -->
+        <section> <!-- Header = Topo do site-->
+            <header id="header">
+                <br>
+                <big><big>Simplifique a sua vida universitária</big></big>
+                <br><br/> UTILIZE O STUDENTCARD COMO SEU AUXILIAR<br/>
+            <br>
+            </header> <!-- Fim do topo-->
+        </section>
+        <article>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#StudentCard"><big>Sobre o StudentCard</big></a></li>
+                    <li><a href="#"><big>Anuidade Zero</big></a></li>
+                    <li><a href="#"><big>Benefícios</big></a></li>
+                    <li><a href="#"><big>Simulação</big></a></li>
+                    <li><a href="#"><big>Pagamento</big></a></li>
+                    <li><a href="#"><big>Fale conosco</big></a></li>
+                </ul>
+            </nav>
+            <section class="estilo1" id="StudentCard">
+                <div>
+                    <p>
+                        <img align="left" hspace="50" src="./card.png">
+                    </p>
+                    <p>
+                        <big><b><ins>Sobre o StudentCard</ins></b></big>
+                        <br><br>O StudentCard tem como objetivo principal te ajudar no pagamento da sua mensalidade universitária<br/><br/>
+                    </p>
+                    <p>
+                        <br><big><b>Como o StudentCard te ajudará?</b></big><br/>
+                        <br>PARCELANDO O BOLETO DA MENSALIDADE DA SUA FACULDADE SEM JUROS!!!<br/>
+                    </p>
+                </div>
+            </section>
+        </article>
+    </body>
+</html> 
