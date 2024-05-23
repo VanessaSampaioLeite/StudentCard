@@ -6,9 +6,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head> <!-- FIM DO HEAD-->
-    <body> <!-- INÍCIO DO BODY -->
+        <link rel="stylesheet" href="./style2.css">
+    </head><!-- FIM DO HEAD-->
+    <body><!-- INÍCIO DO BODY -->
         <section> <!-- Header = Topo do site-->
             <header id="header">
                 <h1>SIMPLIFIQUE A SUA VIDA UNIVERSITÁRIA</h1>
@@ -20,13 +20,11 @@
             <nav>
                 <ul class="menu">
                     <li><a href="#cartao">Sobre o StudentCard</a></li>
-                    <li><a href="#">Anuidade Zero</a></li>
-                    <li><a href="#">Benefícios</a></li>
-                    <li><a href="#">Simulação</a></li>
-                    <li><a href="#">Pagamento</a></li>
-                    <li><a href="#">Fale conosco</a></li>
-                    <li><a href="#">Acessar</a></li>
-                    <li><a class= "btn-cadastrar" href= "#">Cadastre-se</a></li>
+                    <li><a href="#anuidade">Anuidade Zero</a></li>
+                    <li><a href="pagamento.html">Pagamento</a></li>
+                    <li><a href="#contato">Fale conosco</a></li>
+                    <li><a href="login.html">Acessar</a></li>
+                    <li><a class="btn-cadastrar" href= "cadastro.html">Cadastre-se</a></li>
                 </ul>
             </nav>
             <section class="estilo1" id="StudentCard">
@@ -50,5 +48,76 @@
                 </div>
             </section>
         </article>
+        <section id="anuidade">
+            <p>
+                <h4>ANUIDADE ZERO</h4>
+                <h6>SIM! O STUDENTCARD É O MELHOR CARTÃO PARA VOCÊ UNIVERSITÁRIO E AINDA NÃO POSSUI ANUIDADE</h6>
+            </p>
+
+        </section>
+
+        <section id="contato">
+            <div class="formulario">
+                <h2>Fale Conosco</h2>
+                <form action="#" method="POST" id="contact-form">
+                    <!--label for="nome">Nome:</label-->
+                    <input type="text" id="nome" name="nome" required placeholder="Informe o seu nome">
+
+                    <!--label for="email">Email:</label-->
+                    <input type="email" id="email" name="email" required placeholder="Informe o seu E-mail">
+
+                    <!--label for="telefone">Telefone:</label-->
+                    <input type="tel" id="telefone" name="telefone" required placeholder="Informe o seu telefone">
+
+                    <!--label for="assunto">Assunto:</label-->
+                    <select id="assunto" name="assunto" required placeholder="Assunto">
+                        <option value="" disabled selected>Selecione um assunto</option>
+                        <option value="Dúvida">Dúvida</option>
+                        <option value="Feedback">Feedback</option> 
+                        <option value="Sugestão">Sugestão</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+
+                    <!--label for="mensagem">Mensagem:</label-->
+                    <textarea id="mensagem" name="mensagem" required placeholder="Mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+                </form> 
+            </div> 
+        </section> 
+        
+        <footer>
+            <div class="footer-topo">
+                <div>
+                    <ul>
+                        <li>Sobre o StudentCard</li>
+                        <li><a href="#">Anuidade Zero</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="pagamento.html">Pagamento via boletos</a></li>
+                        <li><a href="cadastro.html">Peça o seu cartão</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Valores do StudentCard</li>
+                        <li>Responsabilidade com os clientes</li>
+                        <li><a href="#contato">Suporte</a></li>
+                        <li>Contato via Whatsapp: <ins>+5587999310685</ins></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p>&copy; 2024 StudentCard Desenvolvido Por Vanessa Sampaio</p>
+            </div>
+        </footer>
+
+        <!-- Pop-up de contato -->
+        <div id="popup" class="popup">
+            <p id="popup-message">Mensagem enviada com sucesso!</p>
+        </div>
+    <script src="script2.js"></script>
+
     </body>
 </html>
