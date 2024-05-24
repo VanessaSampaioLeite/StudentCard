@@ -132,3 +132,8 @@ header {
     padding-top: 60px;
     padding-bottom: 25px;
 }
+
+#acessar {
+    width: 100%;
+    text-align: center;
+}
