@@ -140,6 +140,10 @@ header {
     padding-top: 60px;
     padding-bottom: 25px;
 }
+
+#login {
+    height: 800px;
+}
             
 #contato, #login, #cadastro-1  {
     background-color: #000;
@@ -345,5 +349,10 @@ footer {
 }
 
 #anuidade {
+    text-align: center;
+}
+
+#acessar {
+    width: 100%;
     text-align: center;
 }

@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <!-- TITLE -->
+            <title>StudentCard</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <style>
+
+                .btn-cadastrar {
+                    background-color: #686666;
+                    border-radius: 25px;
+                }
+                body {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: "Raleway", sans-serif;
+                }
+                
+                header {
+                    padding-top: 210px;
+                    padding-bottom: 160px;
+                    background: rgb(0,0,0); background: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(0,0,0,1) 17%, rgba(0,0,0,1) 21%, rgba(0,0,0,1) 29%, rgba(33,31,31,1) 34%, rgba(68,66,66,1) 38%, rgba(64,62,62,1) 43%, rgba(63,61,61,1) 46%, rgba(65,63,63,1) 47%, rgba(68,66,66,1) 50%, rgba(61,59,59,1) 51%, rgba(0,0,0,1) 57%, rgba(0,0,0,1) 65%, rgba(0,0,0,1) 66%);
+                    color: white;
+                    text-align: center;
+                    font-size: 325%;
+                }
+
+                /* Classe */
+
+                .estilo1 {
+                    width: 100%;
+                    font-size: 15px;
+                    margin: auto;
+                    display: flex;
+                    border: 0px solid black;
+                    text-align: center;
+                    justify-content: center;
+                    background: rgb(0,0,0);
+                    background: linear-gradient(180deg, rgba(0,0,0,1) 15%, rgba(55,53,53,1) 29%, rgba(72,69,69,1) 35%, rgba(76,73,73,1) 41%, rgba(76,73,73,1) 51%, rgba(72,69,69,1) 57%, rgba(0,0,0,1) 77%);
+                    color: white;
+                    padding-bottom: 150px;
+                    padding-top: 70px;
+                    font-size: 20px;
+            }
+                .menu {
+                    margin: auto;
+                    padding: 20px;
+                    background-color: #080808;
+                    background-image: linear-gradient( to right,#080808,#373636, #686666,#373636, #4e4b4b, #373636, #4e4b4b, #373636, #4e4b4b, #080808 );
+                    display: flex;
+                    list-style: none;
+                    justify-content: space-evenly;
+                    font-size: 20px;
+                }
+
+                .menu a {
+                    padding: 15px;
+                    color: white;
+                    text-decoration: none;
+                    transition: 0.3s all;
+                }
+
+                .menu a:active {
+                    color: black;
+                    transition: 0.3s all;
+                }
+
+                .menu a:visited {
+                    color: white;
+                    transition: 0.3s all;
+                }
+
+                .menu a:hover {
+                    padding: 15px;
+                    color: black;
+                    transition: 0.4s all;
+                    background-color: #fff;
+                    border-radius: 3px;
+                }
+
+                .img-card {
+                    margin: auto;
+                    width: 100%;
+                    height: 500px;
+                    background-image: url('./card3.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;    
+                    padding-top: 10px;
+                }
+
+                .img-card > h2 {
+                    padding-top: 150px;
+                    font-weight: 400;
+                }
+
+            </style>
+    </head> <!-- FIM DO HEAD-->
+    <body> <!-- INÍCIO DO BODY -->
+        <section> <!-- Header = Topo do site-->
+            <header id="header">
+                SIMPLIFIQUE A SUA VIDA UNIVERSITÁRIA
+                <br><br>
+                <small><small>UTILIZE O STUDENTCARD COMO SEU AUXILIAR</small></small>
+            </header> <!-- Fim do topo-->
+        </section>
+        <article>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#cartao">Sobre o StudentCard</a></li>
+                    <li><a href="#">Anuidade Zero</a></li>
+                    <li><a href="#">Benefícios</a></li>
+                    <li><a href="#">Simulação</a></li>
+                    <li><a href="#">Pagamento</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Acessar</a></li>
+                    <li><a class= "btn-cadastrar" href= "#">Cadastre-se</a></li>
+                </ul>
+            </nav>
+            <section class="estilo1" id="StudentCard">
+                <div>
+                    <big><big></big>FALTA POUCO PARA VOCÊ SABER MAIS SOBRE ESSA INOVAÇÃO NA VIDA ACADÊMICA</big></big></big>
+                        <div class="img-card" id="cartao"></div>
+                        <!-- <p>
+                        <img align="left" hspace="50" class="imagem" src="./card.png">
+                        </p> -->
+                        <br><br/>
+                        <p>
+                            <big><big>O <ins>STUDENTCARD</ins> TEM COMO OBJETIVO PRINCIPAL TE AJUDAR NO PAGAMENTO DA SUA MENSALIDADE UNIVERSITÁRIA</big></big>
+                        </p>
+                        <p>
+                            <br><br/>    
+                            
+                            <big><big><big>Como o StudentCard te ajudará?</big></big></big>
+                            <br><br/>
+                            <big><ins>PARCELANDO</ins> O BOLETO DA MENSALIDADE DA SUA FACULDADE SEM JUROS</big>
+                        </p>
+                </div>
+            </section>
+        </article>
+    </body>
+</html>
